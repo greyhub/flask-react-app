@@ -43,17 +43,18 @@ Done !
 
 ## Handle error
 1. Frontend
-### Port 3000 is already in use
+- Port 3000 is already in use
 ```
 npx kill-port 3000
 ```
 
 2. Backend
-### OSError: [Errno 98] Address already in use Flask error
+- OSError: [Errno 98] Address already in use Flask error
 ```
 ps -fA | grep python
 ```
-Check the one with “flask” in the path and note down its PID(process ID).
+> Check the one with “flask” in the path and note down its PID(process ID).
 ```
 kill -9 pid
 ```
+> e.x. : kill -9 23458
