@@ -34,6 +34,7 @@ cd flask-react-app/frontend/
 yarn start
 ```
 3. Backend
+> Ctrl+Shift+T
 ```
 cd ../backend/
 python3 app.py
