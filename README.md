@@ -58,3 +58,5 @@ ps -fA | grep python
 kill -9 pid
 ```
 > e.x. : kill -9 23458
+## Reference:
+- [FReMP Stack](https://dev.to/kouul/frmp-stack-5g9)
