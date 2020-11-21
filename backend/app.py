@@ -20,9 +20,13 @@ def addname(name):
 @app.route('/getnames/')
 def getnames():
     names_json = []
+    count = 0
     if names_col.find({}):
         for name in names_col.find({}).sort("name"):
             names_json.append({"name": name['name'], "id": str(name['_id'])})
+            count += 1
+            if count == 4:
+            	break
     return json.dumps(names_json)
 
 if __name__ == "__main__":
